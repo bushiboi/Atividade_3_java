@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Alternar Imagens</title>
+  <style>
+    #minhaImagem {
+      width: 300px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h2>Alternar Entre Duas Imagens</h2>
+
+  <img id="minhaImagem" src="https://via.placeholder.com/300x200.png?text=Imagem+1" alt="Imagem">
+
+  <br><br>
+
+  <button onclick="trocarImagem()">Trocar Imagem</button>
+
+  <script>
+    let imagemAtual = 1;
+
+    function trocarImagem() {
+      const img = document.getElementById("minhaImagem");
+
+      if (imagemAtual === 1) {
+        img.src = "ENT.jpg";
+        imagemAtual = 2;
+      } else {
+        img.src = "bk-6800-casquinha-de-siri.webp";
+        imagemAtual = 1;
+      }
+    }
+  </script>
+</body>
+</html>
